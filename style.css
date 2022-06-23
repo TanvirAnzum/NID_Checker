@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.8s linear;
+  background: linear-gradient(#34495e, #243b55);
+  position: relative;
+}
+.main__form {
+  border: none;
+  width: min(20em, 90%);
+  height: min(22em, 60%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  border-radius: 0.8em;
+  position: relative;
+  background: #7f8c8d;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+}
+.main__form i {
+  position: absolute;
+  right: calc(10% + 0.2em);
+  top: calc(50% - 1.625em);
+  color: rgba(255, 0, 0, 0.4);
+  visibility: hidden;
+}
+.main__form i:hover {
+  color: rgba(255, 0, 0, 0.8);
+}
+.main__form #number {
+  width: 80%;
+  height: 2.5em;
+  font-size: 1em;
+  border-radius: 0.5em;
+  border: none;
+  outline: none;
+  padding-left: 0.625em;
+  padding-right: 2em;
+}
+.main__form #number:hover {
+  cursor: pointer;
+}
+.main__form label {
+  position: absolute;
+  min-height: 2.5em;
+  left: calc(10% + 0.625em);
+  top: calc(50% - 2.9em);
+  transition: 0.8s;
+  font-weight: 500;
+}
+.main__form label:hover {
+  cursor: pointer;
+}
+.main__form #number:focus ~ label,
+.main__form #number:valid ~ label {
+  color: whitesmoke;
+  left: 10%;
+  top: calc(50% - 5em);
+}
+.main__form #submit {
+  font-size: 1em;
+  height: 2.5em;
+  width: 8em;
+  border-radius: 0.5em;
+  border: none;
+  background-color: #2ecc71;
+  color: white;
+  transition: all 0.5s linear;
+  font-weight: 500;
+}
+.main__form #submit:hover {
+  color: whitesmoke;
+  background-color: #27ae60;
+  cursor: pointer;
+}
+.main__modal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: min(20em, 90%);
+  height: min(16em, 80%);
+  border-radius: 0.8em;
+  background-color: #ecf0f1;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s linear;
+  opacity: 0;
+  pointer-events: none;
+}
+.main__modal i {
+  position: absolute;
+  top: calc(50% - 3.75em);
+  right: calc(50% - 4.5em);
+}
+.main__modal i:hover {
+  color: rgba(255, 0, 0, 0.7);
+  cursor: pointer;
+}
+.main__modal div:last-child {
+  width: 90%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main__modal div:last-child p {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 500;
+}
+.main footer {
+  position: absolute;
+  bottom: calc(0% + 3em);
+}
+.main footer a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}/*# sourceMappingURL=style.css.map */

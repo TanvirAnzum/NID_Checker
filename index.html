@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NID Checker</title>
+    <link rel="shortcut icon" href="./smart-id.png" type="image/x-icon" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- script link -->
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main class="main">
+      <form action="" class="main__form">
+        <input type="number" name="number" id="number" required />
+        <label for="number">National ID</label>
+        <i title="Clear Field" class="fa-solid fa-xmark fa-2x clear"></i>
+        <input type="Submit" id="submit" />
+      </form>
+      <div class="main__modal">
+        <i title="Close Window" class="fa-solid fa-xmark fa-2x close"></i>
+        <div>
+          <img
+            src=""
+            alt="image containing verdict icon"
+            class="main__modal__img"
+          />
+        </div>
+        <div><p class="main__modal__verdict"></p></div>
+      </div>
+      <footer>
+        <a
+          href="https://www.flaticon.com/free-icons/smart-id"
+          title="smart id icons"
+          >Smart id icons created by Freepik - Flaticon</a
+        >
+      </footer>
+    </main>
+  </body>
+</html>
